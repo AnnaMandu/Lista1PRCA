@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lista1Ex4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double nbase;
+            double altura;
+            double area;
+
+            Console.WriteLine("\n---------Exercício 4 da Lista 1---------\n");
+
+            Console.Write("Digite o Valor da Base do Triângulo: ");
+            nbase = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Valor da Altura do Triângulo: ");
+            altura = double.Parse(Console.ReadLine());  
+
+            area = (nbase*altura)/2;
+
+            Console.WriteLine("");
+            Console.WriteLine("A Área do Triângulo Vale: {0}", area);
+        }
+    }
+}
