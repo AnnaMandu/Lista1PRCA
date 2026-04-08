@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lista1Ex8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double grausCelsius;
+            double fahrenheit;
+
+            Console.WriteLine("\n---------Exercício 8 da Lista 1---------\n");
+            
+            Console.Write("Digite Um Valor (em Graus Celsius): ");
+            grausCelsius = double.Parse(Console.ReadLine());
+
+            fahrenheit = (grausCelsius * 1.8) + 32;
+
+            Console.WriteLine("");
+            Console.WriteLine("Resultado (em Fahrenheit): {0}°F", fahrenheit);
+        }
+    }
+}
