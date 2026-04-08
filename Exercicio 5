@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lista1Ex5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double valor1;
+            double valor2;
+            double valor3;
+            double valor4;  
+            double media;
+
+            Console.WriteLine("\n---------Exercício 5 da Lista 1---------\n");
+
+            Console.Write("Digite o Primeiro Valor: ");
+            valor1 = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Segundo Valor: ");
+            valor2 = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Terceiro Valor: ");
+            valor3 = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Quarto Valor: ");
+            valor4 = double.Parse(Console.ReadLine());
+
+            media = (valor1 + valor2 + valor3 + valor4) / 4;
+
+            Console.WriteLine("");
+            Console.WriteLine("A Média dos Quatro Números Vale: {0}", media);
+        }
+    }
+}
