@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lista1Ex7
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double milhaM;
+            double km;
+
+            Console.WriteLine("\n---------Exercício 7 da Lista 1---------\n");
+
+            Console.Write("Digite Um Valor (em Milhas Marítimas): ");
+            milhaM = double.Parse(Console.ReadLine());
+
+            km = milhaM * 1.852;
+
+            Console.WriteLine("");
+            Console.WriteLine("Resultado (em Quilômetros): {0} Km", km);
+        }
+    }
+}
