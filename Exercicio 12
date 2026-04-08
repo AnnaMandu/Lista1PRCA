@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lista1Ex12
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double valorp1;
+            double valorp2;
+            double valorp3;
+            double valorp4;
+            double valorp5;
+            double total;
+            double pagamento;
+            double troco;
+
+            Console.WriteLine("\n---------Exercício 12 da Lista 1---------\n");
+           
+            Console.Write("Digite o Valor do Primeiro Produto: R$ ");
+            valorp1 = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Valor do Segundo Produto: R$ ");
+            valorp2 = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Valor do Terceiro Produto: R$ ");
+            valorp3 = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Valor do Quarto Produto: R$ ");
+            valorp4 = double.Parse(Console.ReadLine());
+
+            Console.Write("Digite o Valor do Quinto Produto: R$ ");
+            valorp5 = double.Parse(Console.ReadLine());
+
+            total = valorp1 + valorp2 + valorp3 + valorp4 + valorp5;
+
+            Console.WriteLine("");
+            Console.WriteLine("Total: {0}", total.ToString("C"));
+
+            Console.Write("Digite o Valor do Pagamento: R$ ");
+            pagamento = double.Parse(Console.ReadLine());
+
+            troco = pagamento - total;
+
+            Console.WriteLine("");
+            Console.WriteLine("Troco: {0}", troco.ToString("C"));
+        }
+    }
+}
